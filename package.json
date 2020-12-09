@@ -9,9 +9,11 @@
   ],
   "scripts": {
     "go": "node .",
-    "build:client": "cd packages/client && parcel build index.html"
+    "build:client": "cd packages/client && parcel build index.html",
+    "build:exec": "yarn build:client && nexe . -r \"packages/**/*\" -t \"linux-x64-12.16.2\" -o \"./dist/exe\""
   },
   "devDependencies": {
+    "nexe": "^3.3.7",
     "parcel-bundler": "^1.12.4"
   }
 }
