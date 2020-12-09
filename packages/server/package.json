@@ -1,0 +1,11 @@
+{
+  "name": "@pkg-test/server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@pkg-test/common": "1.0.0",
+    "express": "^4.17.1"
+  }
+}
